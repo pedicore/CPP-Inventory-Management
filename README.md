@@ -59,5 +59,8 @@ Name: Mouse | Quantity: 25
 Memory freed successfully!
 
 ----------------------------------------------------------
-License
+
+
+
+## License
 Distributed under the MIT License. See LICENSE for more information.
