@@ -10,8 +10,6 @@ void init_inventory(inventory &inv){
     inv.items = new item [inv.capacity];
 
 
-
-
 }
 void add_item(inventory &inv , int id , const string &name , int quantity){
 
@@ -42,15 +40,10 @@ int find_item_by_id(const inventory& inv, int target_id){
         {
             return i;
         }
-        
-
-
-
 
     }
   return -1;
 }
-
 void print_inventory(const inventory &inv){
 
     for (int i = 0; i < inv.size; i++) {
@@ -59,18 +52,12 @@ void print_inventory(const inventory &inv){
         cout<< " | Qty: " << inv.items[i].quantity << endl;
     }
 
-
-
 }
 void free_inventory (inventory &inv){
-
 delete[] inv.items ;
 inv.items = nullptr;
 inv.capacity = 0;
 inv.size = 0;
-
-
-
 }
 
 
